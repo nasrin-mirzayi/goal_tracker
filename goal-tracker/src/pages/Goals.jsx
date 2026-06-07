@@ -1,160 +1,329 @@
+// import {
+//   Typography,
+//   Box,
+//   Button,
+//   TextField,
+//   Tabs,
+//   Tab,
+// } from "@mui/material";
+
+// import {
+//   Link,
+// } from "react-router-dom";
+
+// import {
+//   useState,
+// } from "react";
+
+// import {
+//   useGoals,
+// } from "../context/GoalContext";
+
+// import GoalCard from "../components/goals/GoalCard";
+
+// export default function Goals() {
+//   const { goals } =
+//     useGoals();
+
+//   const [search, setSearch] =
+//     useState("");
+
+//   const [status, setStatus] =
+//     useState("all");
+
+//   const filteredGoals =
+//     goals.filter((goal) => {
+//       const matchesSearch =
+//         goal.title
+//           .toLowerCase()
+//           .includes(
+//             search.toLowerCase()
+//           );
+
+//       const matchesStatus =
+//         status === "all"
+//           ? true
+//           : goal.status ===
+//             status;
+
+//       return (
+//         matchesSearch &&
+//         matchesStatus
+//       );
+//     });
+
+//   return (
+//     <Box>
+//       <Box
+//         sx={{
+//           display: "flex",
+//           justifyContent:
+//             "space-between",
+//           alignItems:
+//             "center",
+//           mb: 3,
+//         }}
+//       >
+//         <Typography variant="h4">
+//           Goals
+//         </Typography>
+
+//         <Button
+//           component={Link}
+//           to="/goals/new"
+//           variant="contained"
+//         >
+//           New Goal
+//         </Button>
+//       </Box>
+
+//       <TextField
+//         fullWidth
+//         label="Search goals"
+//         value={search}
+//         onChange={(e) =>
+//           setSearch(
+//             e.target.value
+//           )
+//         }
+//         sx={{
+//           mb: 3,
+//         }}
+//       />
+
+//       <Tabs
+//         value={status}
+//         onChange={(
+//           _,
+//           value
+//         ) =>
+//           setStatus(value)
+//         }
+//         sx={{
+//           mb: 3,
+//         }}
+//       >
+//         <Tab
+//           label="All"
+//           value="all"
+//         />
+
+//         <Tab
+//           label="Active"
+//           value="active"
+//         />
+
+//         <Tab
+//           label="Paused"
+//           value="paused"
+//         />
+
+//         <Tab
+//           label="Completed"
+//           value="completed"
+//         />
+
+//         <Tab
+//           label="Archived"
+//           value="archived"
+//         />
+//       </Tabs>
+
+//       {filteredGoals.length ===
+//       0 ? (
+//         <Typography
+//           color="text.secondary"
+//         >
+//           No goals found.
+//         </Typography>
+//       ) : (
+//         <Box
+//           sx={{
+//             display: "grid",
+//             gridTemplateColumns:
+//               "repeat(auto-fit,minmax(320px,1fr))",
+//             gap: 3,
+//           }}
+//         >
+//           {filteredGoals.map(
+//             (goal) => (
+//               <GoalCard
+//                 key={goal.id}
+//                 goal={goal}
+//               />
+//             )
+//           )}
+//         </Box>
+//       )}
+//     </Box>
+//   );
+// }
+
+
 import {
-  Typography,
-  Box,
-  Button,
-  TextField,
-  Tabs,
-  Tab,
+Typography,
+Box,
+Button,
+TextField,
+Tabs,
+Tab,
 } from "@mui/material";
 
 import {
-  Link,
+Link,
 } from "react-router-dom";
 
 import {
-  useState,
+useState,
 } from "react";
 
 import {
-  useGoals,
+useTranslation,
+} from "react-i18next";
+
+import {
+useGoals,
 } from "../context/GoalContext";
 
 import GoalCard from "../components/goals/GoalCard";
 
 export default function Goals() {
-  const { goals } =
-    useGoals();
+const { t } =
+useTranslation();
 
-  const [search, setSearch] =
-    useState("");
+const { goals } =
+useGoals();
 
-  const [status, setStatus] =
-    useState("all");
+const [search, setSearch] =
+useState("");
 
-  const filteredGoals =
-    goals.filter((goal) => {
-      const matchesSearch =
-        goal.title
-          .toLowerCase()
-          .includes(
-            search.toLowerCase()
-          );
+const [status, setStatus] =
+useState("all");
 
-      const matchesStatus =
-        status === "all"
-          ? true
-          : goal.status ===
-            status;
+const filteredGoals =
+goals.filter((goal) => {
+const matchesSearch =
+goal.title
+.toLowerCase()
+.includes(
+search.toLowerCase()
+);
 
-      return (
-        matchesSearch &&
-        matchesStatus
-      );
-    });
+
+  const matchesStatus =
+    status === "all"
+      ? true
+      : goal.status ===
+        status;
 
   return (
-    <Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent:
-            "space-between",
-          alignItems:
-            "center",
-          mb: 3,
-        }}
-      >
-        <Typography variant="h4">
-          Goals
-        </Typography>
+    matchesSearch &&
+    matchesStatus
+  );
+});
 
-        <Button
-          component={Link}
-          to="/goals/new"
-          variant="contained"
-        >
-          New Goal
-        </Button>
-      </Box>
+return ( <Box>
+<Box
+sx={{
+display: "flex",
+justifyContent:
+"space-between",
+alignItems:
+"center",
+mb: 3,
+}}
+> <Typography variant="h4">
+{t("goals")} </Typography>
 
-      <TextField
-        fullWidth
-        label="Search goals"
-        value={search}
-        onChange={(e) =>
-          setSearch(
-            e.target.value
-          )
-        }
-        sx={{
-          mb: 3,
-        }}
-      />
+```
+    <Button
+      component={Link}
+      to="/goals/new"
+      variant="contained"
+    >
+      {t("createGoal")}
+    </Button>
+  </Box>
 
-      <Tabs
-        value={status}
-        onChange={(
-          _,
-          value
-        ) =>
-          setStatus(value)
-        }
-        sx={{
-          mb: 3,
-        }}
-      >
-        <Tab
-          label="All"
-          value="all"
-        />
+  <TextField
+    fullWidth
+    label={t("searchGoals")}
+    value={search}
+    onChange={(e) =>
+      setSearch(
+        e.target.value
+      )
+    }
+    sx={{
+      mb: 3,
+    }}
+  />
 
-        <Tab
-          label="Active"
-          value="active"
-        />
+  <Tabs
+    value={status}
+    onChange={(
+      _,
+      value
+    ) =>
+      setStatus(value)
+    }
+    sx={{
+      mb: 3,
+    }}
+  >
+    <Tab
+      label={t("all")}
+      value="all"
+    />
 
-        <Tab
-          label="Paused"
-          value="paused"
-        />
+    <Tab
+      label={t("active")}
+      value="active"
+    />
 
-        <Tab
-          label="Completed"
-          value="completed"
-        />
+    <Tab
+      label={t("paused")}
+      value="paused"
+    />
 
-        <Tab
-          label="Archived"
-          value="archived"
-        />
-      </Tabs>
+    <Tab
+      label={t("completed")}
+      value="completed"
+    />
 
-      {filteredGoals.length ===
-      0 ? (
-        <Typography
-          color="text.secondary"
-        >
-          No goals found.
-        </Typography>
-      ) : (
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(320px,1fr))",
-            gap: 3,
-          }}
-        >
-          {filteredGoals.map(
-            (goal) => (
-              <GoalCard
-                key={goal.id}
-                goal={goal}
-              />
-            )
-          )}
-        </Box>
+    <Tab
+      label={t("archived")}
+      value="archived"
+    />
+  </Tabs>
+
+  {filteredGoals.length ===
+  0 ? (
+    <Typography
+      color="text.secondary"
+    >
+      {t("noGoalsFound")}
+    </Typography>
+  ) : (
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns:
+          "repeat(auto-fit,minmax(320px,1fr))",
+        gap: 3,
+      }}
+    >
+      {filteredGoals.map(
+        (goal) => (
+          <GoalCard
+            key={goal.id}
+            goal={goal}
+          />
+        )
       )}
     </Box>
-  );
+  )}
+</Box>
+
+);
 }

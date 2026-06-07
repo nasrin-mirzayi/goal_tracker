@@ -1,6 +1,4 @@
-import {
-  useState,
-} from "react";
+import { useState } from "react";
 
 export default function useLocalStorage(
   key,
@@ -16,15 +14,12 @@ export default function useLocalStorage(
 
         if (
           item === null ||
-          item ===
-            "undefined"
+          item === "undefined"
         ) {
           return initialValue;
         }
 
-        return JSON.parse(
-          item
-        );
+        return JSON.parse(item);
       } catch {
         return initialValue;
       }
@@ -35,9 +30,7 @@ export default function useLocalStorage(
       const valueToStore =
         typeof newValue ===
         "function"
-          ? newValue(
-              value
-            )
+          ? newValue(value)
           : newValue;
 
       setValue(

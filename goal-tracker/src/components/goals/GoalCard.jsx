@@ -21,6 +21,9 @@ import {
   useUser,
 } from "../../context/UserContext";
 
+import DeleteIcon from "@mui/icons-material/Delete";
+import IconButton from "@mui/material/IconButton";
+
 export default function GoalCard({
   goal,
 }) {
@@ -30,12 +33,12 @@ export default function GoalCard({
     resumeGoal,
     completeGoal,
     archiveGoal,
+    deleteGoal,
   } = useGoals();
 
   const {
-    addXP,
-    registerProgress,
-  } = useUser();
+  rewardProgress,
+} = useUser();
 
   const progress =
     Math.min(
@@ -46,17 +49,15 @@ export default function GoalCard({
       ) * 100
     );
 
-  const handleProgress =
-    () => {
-      addProgress(
-        goal.id
-      );
+    const handleProgress =
+  () => {
+    addProgress(
+      goal.id
+    );
 
-      addXP(10);
-
-      registerProgress();
-    };
-
+    rewardProgress();
+  };
+  
   const getStatusChip =
     () => {
       switch (
@@ -284,6 +285,23 @@ export default function GoalCard({
           >
             Details
           </Button>
+
+          <IconButton
+  color="error"
+  onClick={() => {
+    if (
+      window.confirm(
+        "Delete this goal?"
+      )
+    ) {
+      deleteGoal(goal.id);
+    }
+  }}
+>
+  <DeleteIcon />
+</IconButton>
+
+
         </Stack>
       </CardContent>
     </Card>

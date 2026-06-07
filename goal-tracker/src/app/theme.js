@@ -1,11 +1,11 @@
 import { createTheme } from "@mui/material";
 
 export const colors = {
-  purple: "#7C4DFF",
+  purple: "#8b63fa",
   blue: "#2196F3",
-  green: "#2E7D32",
-  pink: "#E91E63",
-  brown: "#795548",
+  green: "#a9f7ad",
+  pink: "#f576a0",
+  brown: "#643929",
 };
 
 export default function getTheme(
@@ -67,7 +67,7 @@ export default function getTheme(
         },
       },
 
-      
+
     },
   });
 }

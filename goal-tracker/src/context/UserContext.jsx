@@ -25,31 +25,31 @@ export function UserProvider({
     });
 
   const login = (name) => {
-    setUser({
-      ...user,
+    setUser((prev) => ({
+      ...prev,
       name,
       isLoggedIn: true,
-    });
+    }));
   };
 
   const addXP = (
     amount
   ) => {
-    setUser({
-      ...user,
+    setUser((prev) => ({
+      ...prev,
       xp:
-        user.xp +
+        prev.xp +
         amount,
-    });
+    }));
   };
 
   const setStreak = (
     value
   ) => {
-    setUser({
-      ...user,
+    setUser((prev) => ({
+      ...prev,
       streak: value,
-    });
+    }));
   };
 
   const registerProgress =
@@ -59,6 +59,23 @@ export function UserProvider({
           prev
         )
       );
+    };
+
+  const rewardProgress =
+    () => {
+      setUser((prev) => {
+        const updated =
+          calculateStreak(
+            prev
+          );
+
+        return {
+          ...updated,
+          xp:
+            updated.xp +
+            10,
+        };
+      });
     };
 
   const logout =
@@ -84,6 +101,9 @@ export function UserProvider({
           setStreak,
 
         registerProgress,
+
+        rewardProgress,
+
         logout,
       }}
     >
