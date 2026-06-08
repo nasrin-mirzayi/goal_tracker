@@ -107,10 +107,15 @@ npm run dev <br>
 
 <img width="1920" height="922" alt="screencapture-localhost-5173-achievements-2026-06-08-16_21_43" src="https://github.com/user-attachments/assets/ed41a504-5948-45c8-b94e-f1ecd0845c07" />
 
+---
+📲:
+<img width="564" height="1264" alt="screencapture-localhost-5173-goals-2026-06-08-16_39_41" src="https://github.com/user-attachments/assets/9dc6f8cf-d35d-4826-bfc0-50eebbc254ee" />
 
+<img width="373" height="1348" alt="screencapture-localhost-5173-dashboard-2026-06-08-16_36_49" src="https://github.com/user-attachments/assets/a42f902a-136b-42a2-b769-1abd4fc9f606" />
 
+<img width="383" height="1678" alt="screencapture-localhost-5173-goals-2026-06-08-16_35_43" src="https://github.com/user-attachments/assets/8f1e00ce-ab55-4677-a6aa-172b930f523a" />
 
-
+<img width="1626" height="1996" alt="screencapture-localhost-5173-goals-2026-06-08-16_28_55" src="https://github.com/user-attachments/assets/982ceafc-82ca-409f-9b2b-093196cc3f87" />
 
 
 
