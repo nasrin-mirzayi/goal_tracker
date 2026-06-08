@@ -1,8 +1,3 @@
-// src/export default i18n;
-// context/LanguageContext.jsx
-
-
-// export default i18n;
 
 import {
   createContext,
@@ -12,7 +7,6 @@ import {
 } from "react";
 
 import i18n from "../locales/i18n";
-// export default i18n;
 
 const LanguageContext = createContext();
 

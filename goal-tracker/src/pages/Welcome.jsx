@@ -67,19 +67,19 @@ export default function Dashboard() {
     goals.length === 0
       ? 0
       : Math.round(
-          goals.reduce(
-            (acc, goal) =>
-              acc +
-              (goal.progress /
-                goal.target) *
-                100,
-            0
-          ) / goals.length
-        );
+        goals.reduce(
+          (acc, goal) =>
+            acc +
+            (goal.progress /
+              goal.target) *
+            100,
+          0
+        ) / goals.length
+      );
 
   return (
     <Box>
-      {/* HERO */}
+
 
       <Card
         sx={{
@@ -145,7 +145,7 @@ export default function Dashboard() {
         </CardContent>
       </Card>
 
-      {/* STATS */}
+
 
       <Grid
         container
@@ -293,7 +293,6 @@ export default function Dashboard() {
         </Grid>
       </Grid>
 
-      {/* CHART */}
 
       <Card
         sx={{
@@ -335,7 +334,7 @@ export default function Dashboard() {
         </CardContent>
       </Card>
 
-      {/* OVERALL */}
+
 
       <Card
         sx={{
@@ -359,7 +358,6 @@ export default function Dashboard() {
         </CardContent>
       </Card>
 
-      {/* ACTIVE GOALS */}
 
       <Box mb={2}>
         <Typography
@@ -399,39 +397,39 @@ export default function Dashboard() {
         )}
       </Grid>
 
-      {/* COMPLETED */}
+
 
       {completedGoals.length >
         0 && (
-        <>
-          <Typography
-            variant="h5"
-            fontWeight={700}
-            mt={5}
-            mb={2}
-          >
-            Completed Goals
-          </Typography>
+          <>
+            <Typography
+              variant="h5"
+              fontWeight={700}
+              mt={5}
+              mb={2}
+            >
+              Completed Goals
+            </Typography>
 
-          <Stack
-            direction="row"
-            spacing={1}
-            flexWrap="wrap"
-          >
-            {completedGoals.map(
-              (goal) => (
-                <Chip
-                  key={goal.id}
-                  label={
-                    goal.title
-                  }
-                  color="success"
-                />
-              )
-            )}
-          </Stack>
-        </>
-      )}
+            <Stack
+              direction="row"
+              spacing={1}
+              flexWrap="wrap"
+            >
+              {completedGoals.map(
+                (goal) => (
+                  <Chip
+                    key={goal.id}
+                    label={
+                      goal.title
+                    }
+                    color="success"
+                  />
+                )
+              )}
+            </Stack>
+          </>
+        )}
     </Box>
   );
 }

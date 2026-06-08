@@ -20,72 +20,75 @@ import AchievementsPage from "../pages/Achievements";
 
 export default function Router() {
   return (
-  
-  <BrowserRouter>
-   <Routes>
-    <Route
-      path="/"
-      element={<Login />}
-    />
+
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Login />}
+        />
 
 
-    <Route
-      element={<MainLayout />}
-    >
-      <Route
-        path="/dashboard"
-        element={<Dashboard />}
-      />
+        <Route
+          element={<MainLayout />}
+        >
+          <Route
+            path="/dashboard"
+            element={<Dashboard />}
+          />
 
-      <Route
-        path="/goals"
-        element={<Goals />}
-      />
+          <Route
+            path="/goals"
+            element={<Goals />}
+          />
 
-      <Route
-        path="/goals/new"
-        element={<CreateGoal />}
-      />
+          <Route
+            path="/goals/new"
+            element={<CreateGoal />}
+          />
 
-      <Route
-        path="/goals/edit/:id"
-        element={<EditGoal />}
-      />
+          <Route
+            path="/goals/edit/:id"
+            element={<EditGoal />}
+          />
 
-      <Route
-        path="/goals/:id"
-        element={<GoalDetails />}
-      />
+          <Route
+            path="/goals/:id"
+            element={<GoalDetails />}
+          />
 
-      <Route
-        path="/categories"
-        element={<Categories />}
-      />
+          <Route
+            path="/categories"
+            element={<Categories />}
+          />
 
-      <Route
-        path="/settings"
-        element={<Settings />}
-      />
+          <Route
+            path="/settings"
+            element={<Settings />}
+          />
 
-      <Route
-        path="/profile"
-        element={<Profile />}
-      />
+          <Route
+            path="/profile"
+            element={<Profile />}
+          />
 
-      <Route
-        path="/achievements"
-        element={
-          <AchievementsPage />
-        }
-      />
-    </Route>
+          <Route
+            path="/achievements"
+            element={
+              <AchievementsPage />
+            }
+          />
+        </Route>
 
-    <Route
-      path="*"
-      element={<NotFound />}
-    />
-  </Routes>
-  </BrowserRouter>
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </BrowserRouter>
 
   );
 }
+
+
+/// i used format document to all pages. to make sure they code is clean and readable.

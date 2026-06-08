@@ -19,5 +19,22 @@
 "level": "Level",
 "name": "Name",
 "totalGoals": "Total Goals",
-"paused":"paused"
+"paused":"paused",
+"title":"Title",
+"study":"Study",
+"work":"Work",
+"personal":"Personal",
+"category":"Category",
+"target":" Target",
+"active":"Active",
+"all":"All",
+"archived":"Archive",
+"noGoalsFound":"No Goals Found",
+"welcomeBack":"welcomeBack",
+"my text":"Mark small goals today, and change your future",
+"completionPercentage":"Completion Percentage",
+"noActiveGoals":" NO ACTIVE GOAL!",
+"light":" Light",
+"dark":" Dark",
+"backup":"backup"
 }

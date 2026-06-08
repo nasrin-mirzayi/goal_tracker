@@ -37,8 +37,8 @@ export default function GoalCard({
   } = useGoals();
 
   const {
-  rewardProgress,
-} = useUser();
+    rewardProgress,
+  } = useUser();
 
   const progress =
     Math.min(
@@ -49,19 +49,19 @@ export default function GoalCard({
       ) * 100
     );
 
-    const handleProgress =
-  () => {
-    addProgress(
-      goal.id
-    );
+  const handleProgress =
+    () => {
+      addProgress(
+        goal.id
+      );
 
-    rewardProgress();
-  };
-  
+      rewardProgress();
+    };
+
   const getStatusChip =
     () => {
       switch (
-        goal.status
+      goal.status
       ) {
         case "active":
           return (
@@ -109,7 +109,7 @@ export default function GoalCard({
       sx={{
         opacity:
           goal.status ===
-          "archived"
+            "archived"
             ? 0.6
             : 1,
 
@@ -173,107 +173,107 @@ export default function GoalCard({
           }}
         />
         <Stack
-         direction="row"
-         spacing={1}
-         sx={{
-         flexWrap: "wrap",
-         }}
+          direction="row"
+          spacing={1}
+          sx={{
+            flexWrap: "wrap",
+          }}
         >
           {goal.status ===
             "active" && (
-            <>
-              <Button
-                size="small"
-                variant="contained"
-                onClick={
-                  handleProgress
-                }
-              >
-                + Progress
-              </Button>
+              <>
+                <Button
+                  size="small"
+                  variant="contained"
+                  onClick={
+                    handleProgress
+                  }
+                >
+                  + Progress
+                </Button>
 
-              <Button
-                size="small"
-                color="warning"
-                variant="outlined"
-                onClick={() =>
-                  pauseGoal(
-                    goal.id
-                  )
-                }
-              >
-                Pause
-              </Button>
+                <Button
+                  size="small"
+                  color="warning"
+                  variant="outlined"
+                  onClick={() =>
+                    pauseGoal(
+                      goal.id
+                    )
+                  }
+                >
+                  Pause
+                </Button>
 
-              <Button
-                size="small"
-                color="success"
-                variant="outlined"
-                onClick={() =>
-                  completeGoal(
-                    goal.id
-                  )
-                }
-              >
-                Complete
-              </Button>
-            </>
-          )}
+                <Button
+                  size="small"
+                  color="success"
+                  variant="outlined"
+                  onClick={() =>
+                    completeGoal(
+                      goal.id
+                    )
+                  }
+                >
+                  Complete
+                </Button>
+              </>
+            )}
 
           {goal.status ===
             "paused" && (
-            <>
-              <Button
-                size="small"
-                color="primary"
-                variant="contained"
-                onClick={() =>
-                  resumeGoal(
-                    goal.id
-                  )
-                }
-              >
-                Resume
-              </Button>
+              <>
+                <Button
+                  size="small"
+                  color="primary"
+                  variant="contained"
+                  onClick={() =>
+                    resumeGoal(
+                      goal.id
+                    )
+                  }
+                >
+                  Resume
+                </Button>
 
-              <Button
-                size="small"
-                color="success"
-                variant="outlined"
-                onClick={() =>
-                  completeGoal(
-                    goal.id
-                  )
-                }
-              >
-                Complete
-              </Button>
-            </>
-          )}
+                <Button
+                  size="small"
+                  color="success"
+                  variant="outlined"
+                  onClick={() =>
+                    completeGoal(
+                      goal.id
+                    )
+                  }
+                >
+                  Complete
+                </Button>
+              </>
+            )}
 
           {goal.status ===
             "completed" && (
-            <Button
-              size="small"
-              color="secondary"
-              variant="outlined"
-              onClick={() =>
-                archiveGoal(
-                  goal.id
-                )
-              }
-            >
-              Archive
-            </Button>
-          )}
+              <Button
+                size="small"
+                color="secondary"
+                variant="outlined"
+                onClick={() =>
+                  archiveGoal(
+                    goal.id
+                  )
+                }
+              >
+                Archive
+              </Button>
+            )}
 
           <Button
-           size="small"
-           variant="outlined"
-           component={Link}
-           to={`/goals/edit/${goal.id}`}
-            >
-           Edit
+            size="small"
+            variant="outlined"
+            component={Link}
+            to={`/goals/edit/${goal.id}`}
+          >
+            Edit
           </Button>
 
 
@@ -287,19 +287,19 @@ export default function GoalCard({
           </Button>
 
           <IconButton
-  color="error"
-  onClick={() => {
-    if (
-      window.confirm(
-        "Delete this goal?"
-      )
-    ) {
-      deleteGoal(goal.id);
-    }
-  }}
->
-  <DeleteIcon />
-</IconButton>
+            color="error"
+            onClick={() => {
+              if (
+                window.confirm(
+                  "Delete this goal?"
+                )
+              ) {
+                deleteGoal(goal.id);
+              }
+            }}
+          >
+            <DeleteIcon />
+          </IconButton>
 
 
         </Stack>

@@ -1,64 +1,3 @@
-// import {
-//   Box,
-//   Typography,
-//   Card,
-//   CardContent,
-//   Chip,
-// } from "@mui/material";
-
-// import {
-//   useAchievements,
-// } from "../context/AchievementContext";
-
-// export default function AchievementsPage() {
-//   const {
-//     achievements,
-//   } =
-//     useAchievements();
-
-//   return (
-//     <Box>
-//       <Typography
-//         variant="h4"
-//         mb={3}
-//       >
-//         Achievements
-//       </Typography>
-
-//       <Card>
-//         <CardContent>
-//           <Box
-//             sx={{
-//               display:
-//                 "flex",
-//               gap: 1,
-//               flexWrap:
-//                 "wrap",
-//             }}
-//           >
-//             {achievements.map(
-//               (
-//                 item,
-//                 index
-//               ) => (
-//                 <Chip
-//                   key={
-//                     index
-//                   }
-//                   label={
-//                     item
-//                   }
-//                   color="primary"
-//                 />
-//               )
-//             )}
-//           </Box>
-//         </CardContent>
-//       </Card>
-//     </Box>
-//   );
-// }
-
 import {
 Card,
 CardContent,
@@ -92,7 +31,7 @@ return ( <Card> <CardContent> <Typography
 "achievements"
 )} </Typography>
 
-```
+
     <Box
       sx={{
         display:
