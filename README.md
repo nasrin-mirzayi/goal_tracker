@@ -105,17 +105,25 @@ npm run dev <br>
 
 <img width="1920" height="951" alt="screencapture-localhost-5173-goals-2026-06-08-16_23_20" src="https://github.com/user-attachments/assets/58e21369-bf8e-4a64-b107-db458b81c6df" />
 
+ <img width="1920" height="922" alt="screencapture-localhost-5173-2026-06-08-18_21_44" src="https://github.com/user-attachments/assets/38bc97ca-44cc-4d92-9c36-7aaaf1801e6b" />
+
 <img width="1920" height="922" alt="screencapture-localhost-5173-achievements-2026-06-08-16_21_43" src="https://github.com/user-attachments/assets/ed41a504-5948-45c8-b94e-f1ecd0845c07" />
 
 ---
 📲: <br>
-<img width="564" height="1264" alt="screencapture-localhost-5173-goals-2026-06-08-16_39_41" src="https://github.com/user-attachments/assets/9dc6f8cf-d35d-4826-bfc0-50eebbc254ee" /> <br>
+
 
 <img width="373" height="1348" alt="screencapture-localhost-5173-dashboard-2026-06-08-16_36_49" src="https://github.com/user-attachments/assets/a42f902a-136b-42a2-b769-1abd4fc9f606" /> <br>
 
 <img width="383" height="1678" alt="screencapture-localhost-5173-goals-2026-06-08-16_35_43" src="https://github.com/user-attachments/assets/8f1e00ce-ab55-4677-a6aa-172b930f523a" /> <br>
+ 
+<img width="383" height="787" alt="screencapture-localhost-5173-categories-2026-06-08-18_25_18" src="https://github.com/user-attachments/assets/eeb56bfb-e1d1-40de-a93b-a9b66544e7af" />   
 
-<img width="1626" height="1996" alt="screencapture-localhost-5173-goals-2026-06-08-16_28_55" src="https://github.com/user-attachments/assets/982ceafc-82ca-409f-9b2b-093196cc3f87" /> <br>
+<img width="383" height="787" alt="screencapture-localhost-5173-goals-new-2026-06-08-18_24_58" src="https://github.com/user-attachments/assets/565fbde6-f1fa-40b9-ac25-1a3c24aa73d6" />
+
+<img width="383" height="787" alt="screencapture-localhost-5173-profile-2026-06-08-18_23_59" src="https://github.com/user-attachments/assets/1940eb0b-0f08-42e0-8e87-a7b833e01456" />
+
+ <img width="383" height="1126" alt="screencapture-localhost-5173-goals-2026-06-08-18_26_01" src="https://github.com/user-attachments/assets/a5ee8b21-1f29-467d-a544-83cabf20b6dc" />
 
 
 
