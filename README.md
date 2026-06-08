@@ -81,5 +81,10 @@ get the exact url run
 npm install
 npm run dev
 
+<img width="1626" height="1996" alt="screencapture-localhost-5173-goals-2026-06-08-16_28_55" src="https://github.com/user-attachments/assets/3e463e00-4280-41fb-9535-d6b982e17a40" />
+
+
+
+
 small fake login
 create goals and follow..
