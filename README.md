@@ -4,7 +4,7 @@ used MUI for theme and style,and i18next for language. hope enjoy the app.☺️
 ---
  feature:
  
-🌸Dashboard: 
+🌸Dashboard: <br><br>
   ✨ shows your level,xp,streak,goals,completed and completion percentage. <br>
   📊chart ---> weekly activity and categories<br>
    every goal you create appear here.<br>
@@ -15,13 +15,13 @@ Goal card:
 3. complete action button (complete your goal)
 4. edit button (edit your title, category or target )
 5. details button (more info about your card )
-6. delete icon
+6. delete icon <br>
    🍀 Each card shows:
    1. title
    2.category
    3.status
    4.progressbar
-
+---
 🌸Goals:
 1.Filter goals
 2.All goals
@@ -30,11 +30,11 @@ Goal card:
 5.Completed goals
 6.Archive goals
 
-
+---
 🌸Create Goal:
 title + categoty + target
 
-
+---
 🌸Achievements:
 
  🍀unlock:
