@@ -117,13 +117,12 @@ npm run dev <br>
 
 <img width="383" height="1678" alt="screencapture-localhost-5173-goals-2026-06-08-16_35_43" src="https://github.com/user-attachments/assets/8f1e00ce-ab55-4677-a6aa-172b930f523a" /> <br>
  
-<img width="383" height="787" alt="screencapture-localhost-5173-categories-2026-06-08-18_25_18" src="https://github.com/user-attachments/assets/eeb56bfb-e1d1-40de-a93b-a9b66544e7af" />   
+<img width="383" height="787" alt="screencapture-localhost-5173-categories-2026-06-08-18_25_18" src="https://github.com/user-attachments/assets/eeb56bfb-e1d1-40de-a93b-a9b66544e7af" />   <br>
 
-<img width="383" height="787" alt="screencapture-localhost-5173-goals-new-2026-06-08-18_24_58" src="https://github.com/user-attachments/assets/565fbde6-f1fa-40b9-ac25-1a3c24aa73d6" />
+<img width="383" height="787" alt="screencapture-localhost-5173-goals-new-2026-06-08-18_24_58" src="https://github.com/user-attachments/assets/565fbde6-f1fa-40b9-ac25-1a3c24aa73d6" /> <br>
 
-<img width="383" height="787" alt="screencapture-localhost-5173-profile-2026-06-08-18_23_59" src="https://github.com/user-attachments/assets/1940eb0b-0f08-42e0-8e87-a7b833e01456" />
+<img width="383" height="787" alt="screencapture-localhost-5173-profile-2026-06-08-18_23_59" src="https://github.com/user-attachments/assets/1940eb0b-0f08-42e0-8e87-a7b833e01456" /> <br>
 
- <img width="383" height="1126" alt="screencapture-localhost-5173-goals-2026-06-08-18_26_01" src="https://github.com/user-attachments/assets/a5ee8b21-1f29-467d-a544-83cabf20b6dc" />
 
 
 
