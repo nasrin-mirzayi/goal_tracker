@@ -1,4 +1,4 @@
-<img width="1626" height="1996" alt="screencapture-localhost-5173-goals-2026-06-08-16_28_55" src="https://github.com/user-attachments/assets/7c756f94-288d-4bb4-bd33-55df0f808ee3" /># goal_tracker
+
 A responsive goal tracker app that let users create their own gaols, edit, pause/resume and complete their goals in a funny way.
 used MUI for theme and style,and i18next for language. hope enjoy the app.☺️
 ---
