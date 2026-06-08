@@ -16,13 +16,13 @@ Goal card:
 4. edit button (edit your title, category or target )
 5. details button (more info about your card )
 6. delete icon <br>
-   🍀 Each card shows:<br>
-   1. title<br>
+   🍀 Each card shows: <br>
+    1. title<br>
    2.category <br>
    3.status <br>
    4.progressbar <br>
 ---
-🌸Goals:
+🌸Goals: <br>
 1.Filter goals <br>
 2.All goals  <br>
 3.Active goals <br>
