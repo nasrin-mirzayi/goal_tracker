@@ -1,13 +1,13 @@
 # goal_tracker
 A responsive goal tracker app that let users create their own gaols, edit, pause/resume and complete their goals in a funny way.
 used MUI for theme and style,and i18next for language. hope enjoy the app.☺️
-
+---
  feature:
  
 🌸Dashboard: 
-  ✨ shows your level,xp,streak,goals,completed and completion percentage.
-  📊chart ---> weekly activity and categories
-   every goal you create appear here.
+  ✨ shows your level,xp,streak,goals,completed and completion percentage. <br>
+  📊chart ---> weekly activity and categories<br>
+   every goal you create appear here.<br>
    
 Goal card:
 1. progress button (complete step by step (till your target )
