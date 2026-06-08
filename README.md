@@ -78,12 +78,39 @@ reset all data <br>
 ---
 
 
-🌸how to run:
-get the exact url run <br>
+🌸how to run:<br>
+get the exact url <br>
 npm install <br>
 npm run dev <br>
 
-<img width="1626" height="1996" alt="screencapture-localhost-5173-goals-2026-06-08-16_28_55" src="https://github.com/user-attachments/assets/3e463e00-4280-41fb-9535-d6b982e17a40" />
+---
+
+💻 :
+<img width="1920" height="951" alt="screencapture-localhost-5173-goals-2026-06-08-16_23_20"
+ src="https://github.com/user-attachments/assets/63b855d9-0486-4546-a690-f051e42f6068" />
+
+<img width="1920" height="992" alt="screencapture-localhost-5173-settings-2026-06-08-16_29_44" src="https://github.com/user-attachments/assets/ef3441a9-7543-4e89-a3fe-826c6e0e5b93" />
+
+<img width="1920" height="1030" alt="screencapture-localhost-5173-goals-2026-06-08-16_31_05" src="https://github.com/user-attachments/assets/d005d21b-7a94-4967-b59d-0ea1f2ffff05" />
+
+<img width="1920" height="922" alt="screencapture-localhost-5173-goals-2026-06-08-16_31_28" src="https://github.com/user-attachments/assets/f8209cbb-6742-4c64-9a79-cea45d6578dc" />
+
+<img width="1920" height="992" alt="screencapture-localhost-5173-settings-2026-06-08-16_32_00" src="https://github.com/user-attachments/assets/0c260f7e-9d3e-4095-ae17-3375911b646f" />
+
+<img width="1920" height="1030" alt="screencapture-localhost-5173-goals-2026-06-08-16_32_58" src="https://github.com/user-attachments/assets/f83181a7-3442-4528-befb-a66e7673adf2" />
+
+<img width="1920" height="1311" alt="screencapture-localhost-5173-dashboard-2026-06-08-16_33_32" src="https://github.com/user-attachments/assets/933725c8-e110-48c5-a354-02e1170f75cc" />
+
+<img width="1920" height="922" alt="screencapture-localhost-5173-goals-edit-c8069bfc-7caa-484e-b13f-74e72ab20757-2026-06-08-16_23_50" src="https://github.com/user-attachments/assets/27884de8-333e-432d-995a-78a4a94c8def" />
+
+<img width="1920" height="951" alt="screencapture-localhost-5173-goals-2026-06-08-16_23_20" src="https://github.com/user-attachments/assets/58e21369-bf8e-4a64-b107-db458b81c6df" />
+
+<img width="1920" height="922" alt="screencapture-localhost-5173-achievements-2026-06-08-16_21_43" src="https://github.com/user-attachments/assets/ed41a504-5948-45c8-b94e-f1ecd0845c07" />
+
+
+
+
+
 
 
 
